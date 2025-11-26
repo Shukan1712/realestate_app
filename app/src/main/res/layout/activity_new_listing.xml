@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginBottom="16dp"
+            android:tint="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Listing"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Property Title (e.g. Luxury Villa)" />
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"/>
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bedrooms: "/>
+            <NumberPicker
+                android:id="@+id/npBedrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bathrooms: "
+                android:layout_marginStart="16dp"/>
+            <NumberPicker
+                android:id="@+id/npBathrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location (Lat/Lng)"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <EditText
+                android:id="@+id/edtLat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="numberDecimal|numberSigned"/>
+
+            <EditText
+                android:id="@+id/edtLng"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"
+                android:inputType="numberDecimal|numberSigned"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUploadImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Images"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Listing"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

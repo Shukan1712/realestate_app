@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarTime"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Select Time"
+        app:navigationIcon="@drawable/ic_back"
+        android:background="@color/design_default_color_primary"
+        app:titleTextColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date: --/--/----"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn9to10"
+            android:text="9:00 AM - 10:00 AM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn10to11"
+            android:text="10:00 AM - 11:00 AM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn11to12"
+            android:text="11:00 AM - 12:00 PM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn12to1"
+            android:text="12:00 PM - 1:00 PM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"/>
+
+    </GridLayout>
+
+</LinearLayout>

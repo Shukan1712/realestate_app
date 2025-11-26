@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. Local Experts (Last 4) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Experts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLocalExperts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 2. Most Active Agents (First 4 Active) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Active Agents"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvActiveAgents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 3. All Agents (4th to 16th) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Agents"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAllAgents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 4. Top Agents in Rental (Even Numbers) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Agents in Rental"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRentalAgents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
